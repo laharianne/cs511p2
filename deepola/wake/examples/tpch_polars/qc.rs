@@ -31,13 +31,7 @@ pub fn query(
             // log::info!("Filtering data in WHERE node");
             let order_date = df.column("o_orderdate").unwrap();
             let mask = order_date.gt_eq("1993-10-01").unwrap() & order_date.lt("1994-01-01").unwrap();
-            // let result = df.filter(&mask).unwrap();
-            // log::info!("Filtered mask created");
-            // let before_filter_count = df.height();
-            // log::info!("Before filtering: {} rows", before_filter_count);
             let result = df.filter(&mask).unwrap();
-            // let after_filter_count = result.height();
-            // log::info!("After filtering: {} rows", after_filter_count);
             result
         })))
         .build();
