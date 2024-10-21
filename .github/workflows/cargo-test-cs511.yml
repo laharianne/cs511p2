@@ -21,9 +21,9 @@ jobs:
     - name: Test Provided Query Q14
       run: cargo run --release --example tpch_polars -- test q14
       working-directory: deepola/wake
-    # - name: Test New Query a
-    #   run: cargo run --release --example tpch_polars -- test qa
-    #   working-directory: deepola/wake
+    - name: Test New Query a
+      run: cargo run --release --example tpch_polars -- test qa
+      working-directory: deepola/wake
     - name: Test New Query b
       run: cargo run --release --example tpch_polars -- test qb
       working-directory: deepola/wake
