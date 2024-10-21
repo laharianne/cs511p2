@@ -10,7 +10,7 @@ use wake::graph::*;
 mod q1;
 mod q14;
 // mod qa;
-// mod qb;
+mod qb;
 mod qc;
 // mod qd;
 mod tests;
@@ -72,7 +72,7 @@ pub fn get_query_service(
         "q1" => q1::query(table_input, output_reader),
         "q14" => q14::query(table_input, output_reader),
         // "qa" => qa::query(table_input, output_reader),
-        // "qb" => qb::query(table_input, output_reader),
+        "qb" => qb::query(table_input, output_reader),
         "qc" => qc::query(table_input, output_reader),
         // "qd" => qd::query(table_input, output_reader),
         _ => panic!("Invalid Query Parameter"),
