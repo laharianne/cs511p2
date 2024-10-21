@@ -1,5 +1,4 @@
 use crate::utils::*;
-
 extern crate wake;
 use itertools::Itertools;
 use polars::prelude::DataFrame;
@@ -8,7 +7,6 @@ use polars::series::ChunkCompare;
 use polars::series::Series;
 use wake::graph::*;
 use wake::polars_operations::*;
-
 use std::collections::HashMap;
 
 /// This node implements the following SQL query
