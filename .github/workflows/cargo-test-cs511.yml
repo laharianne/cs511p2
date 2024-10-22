@@ -30,6 +30,6 @@ jobs:
     - name: Test New Query c
       run: cargo run --release --example tpch_polars -- test qc
       working-directory: deepola/wake
-    # - name: Test New Query d
-    #   run: cargo run --release --example tpch_polars -- test qd
-    #   working-directory: deepola/wake
+    - name: Test New Query d
+      run: cargo run --release --example tpch_polars -- test qd
+      working-directory: deepola/wake
